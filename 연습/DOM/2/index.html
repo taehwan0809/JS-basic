@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 조작 실습</title>
+</head>
+<body>
+    <h1 id="main-title">환영합니다</h1>
+    <p id="message">이 텍스트가 변경됩니다</p>
+    
+    <button onclick="sayHello()">안녕하세요</button>
+    <button onclick="sayGoodbye()">안녕히 가세요</button>
+
+    <button onclick="changeBackgroundColor('lightblue')">파란색</button>
+    <button onclick="changeBackgroundColor('lightgreen')">초록색</button>
+    <button onclick="changeBackgroundColor('lightyellow')">노란색</button>
+    <button onclick="changeBackgroundColor('white')">원래대로</button>
+    
+    
+    <button onclick="changeTitle('좋은 아침입니다')">아침인사</button>
+    <button onclick="changeTitle('점심 맛있게 드세요')">점심인사</button>
+    <button onclick="changeTitle('오늘 하루도 수고하셨습니다')">저녁인사</button>
+    
+
+    <button onclick="toggleMessage()">메세지 보이기/숨기기</button>
+
+    <br><input type="text" id="user-input" placeholder="여기에 입력하세요"/></body><br>
+    <button onclick="processInput()">처리하기</button>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드롭다운</title>
+</head>
+<body>
+    <select onchange="changeBackground()">
+        <option value="white">흰색</option>
+        <option value="lightblue">파란색</option>
+        <option value="lightgreen">초록색</option>
+    </select>
+    <div id="mouse" onmouseover="showMessage()" onmouseout="hideMessage()">마우스를 올려보세요</div>
+        <p id="message" style="display: none">안녕하세요</p>
+        <button onmouseover="onButton()">초록색으로 변하는 버튼</button>
+
+        <input type="text" onkeyup="liveSearch()" placeholder="실시간 검색"/>
+        <div id="search-result"></div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

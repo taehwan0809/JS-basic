@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단한 계산기</title>
+</head>
+<body>
+    <div>
+        <div>
+            <input type="number" id="num1" placeholder="첫 번째 숫자"/>
+            <span>과</span>
+            <input type="number" id="num2" placeholder="두 번째 숫자"/>
+        </div>
+        <div>
+            <button class="operator" onclick="calculator('+')">+ 더하기</button>
+            <button class="operator" onclick="calculator('-')">- 뺴기</button>
+            <button class="operator" onclick="calculator('*')">* 곱하기</button>
+            <button class="operator" onclick="calculator('/')">/ 나누기</button>
+        </div>
+        <div id="result">결과가 여기에 표시됩니다</div>
+        <button class="clear" onclick="clearAll()">결과 초기화</button>
+
+        <script src="./script.js"></script>
+    </div>
+</body>
+</html>
