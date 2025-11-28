@@ -102,6 +102,17 @@ const add2 = (a,b) => a + b;
 console.log(add2(6,2))
 
 
+// 스프레드 연산자(...)
+//배열의 요소를 하나씩 펼쳐놓는 것.
+
+//arr1 = [1,2,3]
+//...arr1 => 1,2,3
+
+let arr1 = [1,2,3];
+let arr2 = [4,5,6];
+console.log(...arr1,...arr2);
+
+
 
 
 let fruits = ["사과", "바나나", "오렌지"];
@@ -152,10 +163,6 @@ let student = {
 };
 
 console.log(student.birthday());
-
-
-
-
 
 
 
