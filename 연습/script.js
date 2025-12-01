@@ -71,6 +71,7 @@ let i = 10;
 while(i <5){
     console.log("while 실행 됨!");
 }
+
 do{
     console.log("do-while 실행 됨");
 }while(i<5);
@@ -166,3 +167,54 @@ console.log(student.birthday());
 
 
 
+//map() : 배열의 각 요소에 대해 주어진 함수를 호출한 결과를 모아 새로운 배열을 반환
+const arr6 = [1,2,3];
+const arr7 = arr6.map(item => item*2);
+console.log(arr6, arr7);
+
+const arr8 = ['apple', 'banana', 'cherry'];
+
+const arr9 = arr8.map(item => item.toUpperCase());
+
+console.log(arr9);
+
+//slice
+arr9.slice(1,3);
+
+//includes
+console.log(arr9.includes('watermelon') ? '있어요' : '없어요');
+
+//sort
+console.log(arr9.sort());
+
+//forEach
+arr2.forEach((item, index) => {
+    console.log(`${index+1}번째 가수는 ${item}입니다`)
+})
+
+//class
+class Person {
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+    introduce(){
+        return `안녕하세요 저는 ${this.name}이고, 나이는 ${this.age}살 입니다`;
+    }
+}
+let person1 = new Person('홍길동', 30);
+let person2 = new Person('정호', 18);
+
+//class 상속 : extends
+class Student extends Person{
+    constructor(name, age, grade){
+        super(name, age); //person this.name, this.age 가져옴
+        this.grade = grade;
+    }
+    study() {
+        return `${this.name}은 ${this.grade}학년 입니다`
+    }
+}
+
+const class2 = new Student('홍길동', 20,3);
+console.log(class2.study());
